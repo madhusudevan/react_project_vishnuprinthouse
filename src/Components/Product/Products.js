@@ -12,7 +12,13 @@ import image5 from '../../Images/photostat.webp'
 
  function Products () {
     
-    
+    var style={
+      
+
+       
+       width:'10rem',
+       height:'20rem'
+    }
    
     
    
@@ -25,31 +31,31 @@ import image5 from '../../Images/photostat.webp'
           <div className='col-md-4 py-4'>
            
  
-          <Cards image={image}offset='offsetprinting'/>
+          <Cards image={image}offset='offsetprinting'title='Offset Printing'/>
  </div>
  <div className='col-md-4 py-4'>
            
- <Cards image={image1} screen='screen' />
+ <Cards image={image1} screen='screen'title='Screen Printing' />
  
  </div>
  <div className='col-md-4 py-4'>
           
- <Cards image={image2} wedding="wedding" />
+ <Cards image={image2} wedding="wedding" title='Wedding Cards' />
  
  </div>
  <div className='col-md-4 py-4'>
           
- <Cards image={image3}/>
+ <Cards image={image3} binding='binding' title='Book Bindings'/>
  
  </div>
  <div className='col-md-4 py-4'>
            
- <Cards image={image4}/>
+ <Cards image={image4} dtp='dtp'title='DTP Works'/>
  
  </div>
  <div className='col-md-4 py-4'>
            
- <Cards image={image5} photo="photo" />
+ <Cards image={image5} photo="photo"title='Photostat' />
  
  </div>
   </div>

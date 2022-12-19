@@ -3,7 +3,7 @@ import './Section.css'
 export class Section extends Component {
   render() {
     return (
-      <div className='container-fluid p-5'>
+      <div className='container-fluid p-5' id="custom">
         <h1>Premier One-stop Custom Print and Promo Shop in Chicago</h1>
        
      <p>

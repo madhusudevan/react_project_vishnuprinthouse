@@ -10,7 +10,7 @@ import Home from '../Pages/Home'
 import './Cards.css'
 
 function Cards(props) {
-   //console.log(props,'---props')
+    console.log(props.style,'---props')
   const navigate = useNavigate();
    
 
@@ -37,42 +37,28 @@ function Cards(props) {
     // 👇️ navigate to /contacts
     navigate(`/${props.photo}`);
   };
+  const navigateToBinding = () => {
+    // 👇️ navigate to /contacts
+    navigate(`/${props.binding}`);
+  };
  
  
   const navigateToHome = () => {
     // 👇️ navigate to /contacts
     navigate('/');
   };
- 
  // const {offset}=state
- 
-
-
-  return (
-
-    
-        
+  return (      
     <div>
+      <a href=''>
       
-              <Card className="card ">
+              <Card className="card " style={props.style}  onClick={props.wedding?navigateWedding : props.offset?navigateOffsetPrinting :props.photo?navigateToPhoto:props.binding?navigateToBinding: navigateToScreen }>
         <Card.Img variant="top" className="card-image"src={props.image} />
         <Card.Body>
-          <Card.Title></Card.Title>
-          <Card.Text>
-          {/* {console.log(`card texy${props.offset}`)} */}
-          </Card.Text>
-          {
-            
-          }
-          <Button onClick={props.wedding?navigateWedding : props.offset?navigateOffsetPrinting :props.photo?navigateToPhoto: navigateToScreen }className='details'>For More Details</Button>
-          
-          
-          
-
-        
+          <Card.Title className='title'>{props.title}</Card.Title>
         </Card.Body>
       </Card>
-     
+      </a>
       
               </div>
              
@@ -80,6 +66,3 @@ function Cards(props) {
 }
 
 export default Cards
-export {
-  MyContext
-}

@@ -20,4 +20,3 @@ export class Contents extends Component {
 }
 
 export default Contents
-D:\new project\tintu app\our-web\src\Components

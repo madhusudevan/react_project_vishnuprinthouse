@@ -8,6 +8,7 @@ import { MyContext } from './Components/Cards'
 import WeddingCard from './Components/Weddingcard/WeddingCard';
 import ScreenPrinting from './Components/ScreenPrinting/ScreenPrinting'
 import Photostate from './Components/Photostat/Photostat'
+import Binding from './Components/Binding/Binding';
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
         <Route path ="/wedding" element={<WeddingCard/>}/>
         <Route path ="/screen" element={<ScreenPrinting/>}/>
          <Route path ="/photo" element={<Photostate/>}/>
+         <Route path ="/binding" element={<Binding/>}/>
       </Routes>
      </Router>
     </div>
