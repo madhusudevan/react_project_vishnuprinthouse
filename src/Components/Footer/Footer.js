@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import 'font-awesome/css/font-awesome.min.css';
+
+ // import FontAwesome from 'react-fontawesome'
+
+
 export class Footer extends Component {
+
   render() {
     return (
         <div className='container-fluid'id='footer'>
@@ -44,21 +52,21 @@ export class Footer extends Component {
             <br/>
             <h6>About us</h6>
             <br/>
-            <h6>Contact us</h6>
+            <Link to = '/contact' className='link'>Contact us</Link>
             
             <h1>Services</h1>
             <br/>
-            <Link to = '/offsetprinting'>Offset Printing</Link>
-          <Link to = '/screenprinting'>Screen Printing</Link>
-          <Link to = '/offsetprinting'>Graphic Designing</Link>
-          <Link to = '/offsetprinting'>DTP</Link>
-          <Link to = '/offsetprinting'>ID Card Printing</Link>
-          <Link to = '/offsetprinting'>Book Binding</Link>
-          <Link to = '/offsetprinting'>Spiral Binding</Link>
-          <Link to = '/offsetprinting'>Photocopy</Link>
-          <Link to = '/offsetprinting'>Office Stationary</Link>
+          <Link to = '/offsetprinting'className='link'>Offset Printing</Link>
+          <Link to = '/screenprinting' className='link'>Screen Printing</Link>
+          <Link to = '/graphicdesigning' className='link'>Graphic Designing</Link>
+          <Link to = '/dtp' className='link'>DTP</Link>
+          <Link to = '/idcard' className='link'>ID Card Printing</Link>
+          <Link to = '/binding' className='link'>Book Binding</Link>
+          <Link to = '/spiralbinding' className='link'>Spiral Binding</Link>
+          <Link to = '/photocopy' className='link'>Photocopy</Link>
+          <Link to = '/officestationary' className='link'>Office Stationary</Link>
           
-           
+         
           </div>
 
 
@@ -66,7 +74,9 @@ export class Footer extends Component {
 
           <div className='col-md-4'>
             
-            
+           
+
+          
           </div>
                 </div>
             

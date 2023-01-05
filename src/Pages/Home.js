@@ -2,6 +2,7 @@ import React from 'react'
 import CollapsibleExample from '../Components/CollapsibleExample'
 import Slider from '../Components/Slider'
 import Section from '../Components/Section/Section'
+import Web from '../Components/Web/Web'
 import Picture from '../Components/Picture/Picture'
 import Products from '../Components/Product/Products'
 import Contents from '../Components/Contents/Contents'
@@ -17,6 +18,7 @@ function Home(props) {
 
      <Slider/> 
       <Section/>
+      <Web/>
      <Picture/>
      <Products />
       <Contents/>

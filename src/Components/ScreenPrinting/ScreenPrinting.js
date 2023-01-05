@@ -18,7 +18,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
       <div className='container'>
         <img className='idcard' src={require('../../Images/idcard.jpg')}/>
       </div>
-      
+      <h1>Screen</h1>
       
       <Footer/>
     </div>

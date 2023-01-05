@@ -19,7 +19,7 @@ export class Slider extends Component {
         <Carousel.Item interval={500}>
           <img 
             className="d-block w-100 "
-            src={require('../Images/printpic2.webp')}
+            src={require('../Images/development.webp')}
             alt="Second slide"
           />
           <Carousel.Caption>

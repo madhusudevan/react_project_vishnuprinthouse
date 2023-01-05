@@ -1,5 +1,5 @@
 #footer{
-    background: linear-gradient(to bottom, #33ccff 0%, #0099ff 100%);
+    background:#075985;
     color: aliceblue;
     
     height: 80vh;
@@ -38,4 +38,12 @@ margin-left: 0px;
     position: absolute;
     right: 66.66%;
     margin-top: 7%;
+}
+.link{
+    color: white;
+}
+.fa-brands{
+width: 100px;
+height: 100px;
+
 }

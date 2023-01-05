@@ -7,8 +7,8 @@ export class Binding extends Component {
     return (
       <div>
         <CollapsibleExample/>
-        <div>
-          
+        <div className='row' id='bind'>
+          dd
         </div>
 
         <Footer/>

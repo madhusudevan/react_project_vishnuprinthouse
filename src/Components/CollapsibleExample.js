@@ -5,8 +5,13 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useNavigate } from 'react-router-dom';
 import './CollapsibleExample.css'
 function CollapsibleExample() {
+  const navigate = useNavigate()
+  var contactClick = () => {
+    navigate("/contact");
+  }; 
     return (
      
         
@@ -31,7 +36,9 @@ function CollapsibleExample() {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
+              <Button onClick={() => {
+        contactClick();
+      }}>Contact us</Button>
               <Nav.Link eventKey={2} href="#memes">
                 Dank memes
               </Nav.Link>
